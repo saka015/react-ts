@@ -1,0 +1,19 @@
+*{
+  text-align: center;
+  color: white;
+}
+
+body{
+  background-color: #2D3250;
+}
+
+input{
+  color: navy;
+  padding: 10px;
+}
+
+button{
+  padding: 20px;
+  color: navy;
+  background-color: crimson;
+}
