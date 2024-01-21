@@ -7,6 +7,8 @@ import Heading from "./Heading";
 import Oscar from "./components/Oscar";
 import Button from "./components/Button";
 import Input from "./components/Input";
+import Container from "./components/Container";
+import User from "./components/state/User";
 
 const App = () => {
   const personName = {
@@ -30,14 +32,15 @@ const App = () => {
   ];
   return (
     <div>
-      {/* <Greet name="Saka" isLoggedIn={true} />
+      {/*
+       <Greet name="Saka" isUser={true} />
       <Person name={personName} />
       <PersonList names={nameList} />
       <Status status="loading" />
       <Heading>Placeholder text</Heading>
       <Oscar>
         <Heading>Oscar goes to Pawan Singh!</Heading>
-      </Oscar> */}
+      </Oscar>  
 
       <Button
         handleClick={(event, id) => {
@@ -45,6 +48,9 @@ const App = () => {
         }}
       />
       <Input value="" handleChange={(event) => console.log(event)} />
+      <Container styles={{ border: "1px solid black", padding: "1rem" }} />
+      <User/>
+        */}
     </div>
   );
 };

@@ -3,14 +3,19 @@ type InputProps = {
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) =>  void ;
 };
 
-const Input = (props: InputProps) => {
+
+// destructing the props
+
+// We can remove the 'props.' thing from our code
+
+const Input = ({value,handleChange}: InputProps) => {
 
     const handleInputChange = (event:React.ChangeEvent<HTMLInputElement>) => {
         console.log(event);
     }
   return (
     <div>
-      <input type="text" value={props.value} onChange={props.handleInputChange} />
+      <input type="text" value={value} onChange={handleChange} />
     </div>
   );
 };
